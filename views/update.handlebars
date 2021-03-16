@@ -1,0 +1,29 @@
+
+<div className = 'header'>
+  <h1>Tech-Tracker</h1>
+  <p>A way to keep track of topics I have learned or wish to learn as a fullstack developer.</p>
+</div>
+
+<!-- Pass in data from server.js -->
+<ul>
+  {{#each topics}}
+  	<li>
+  	<p><span class="label">ID:</span> {{this.id}}</p>
+      <p><span class="label">Topic:</span> {{this.topic_name}}</p>
+      <p><span class="label">Description:</span> {{this.topic_summary}}</p>
+      <p><span class="label">Learned:</span> {{this.learned}}</p>
+
+      {{!-- <a href="/{{this.id}}">Update Status</a> --}}
+  	</li>
+
+    
+<button class="update" data-id="{{this.id}}">Update to Learned ✓</button>
+
+<div className='check'>
+    <form data-id="{{this.id}}" class="main-page">
+    <button type="submit">Main Page</button>
+    </form>
+</div>
+
+  {{/each}}
+</ul>

@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  padding: 5px;
+  margin: 5px;
+
+}
+
+ul {
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    width:50%;
+    list-style-type: none;
+    background: #faebd7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .update-form {
+    padding: 5px;
+    margin: 5px;
+  
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction:column;
+    float: right;
+  }
+
+  .check {
+    display: flex;
+    flex-direction: column;
+  }
