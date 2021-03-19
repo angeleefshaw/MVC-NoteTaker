@@ -4,7 +4,7 @@
       "username": "eqbd535643ez09w6",
       "password": "i007qjq8gj34zy1o",
       "database": "bx5axmgvd849v2z1",
-      "host": "us-east-1.rds.amazonaws.com",
+      "host": "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       "port": 3306,
       "dialect": "mysql"
     },
@@ -12,7 +12,7 @@
       "username": "eqbd535643ez09w6",
       "password": "i007qjq8gj34zy1o",
       "database": "bx5axmgvd849v2z1",
-      "host": "us-east-1.rds.amazonaws.com",
+      "host": "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       "port": 3306,
       "dialect": "mysql"
     }
