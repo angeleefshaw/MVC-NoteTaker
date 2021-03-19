@@ -1,0 +1,18 @@
+
+{
+    "development": {
+      "username": "hkq3pgqpeorrajet",
+      "password": "nbi3nl64q4xbhqvg",
+      "database": "qhdjq7e0x35jy371",
+      "host": "us-east-1.rds.amazonaws.com",
+      "port": 3306,
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "hkq3pgqpeorrajet",
+      "password": "nbi3nl64q4xbhqvg",
+      "database": "qhdjq7e0x35jy371",
+      "host": "us-east-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    }
+  }
