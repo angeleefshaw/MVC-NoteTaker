@@ -16,7 +16,7 @@ var mysql = require('mysql');
 //     database: 'webdev_student_db'
 //   });
 
-var JAWSDB_URL = 'mysql://hkq3pgqpeorrajet:nbi3nl64q4xbhqvg@klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qhdjq7e0x35jy371'
+const JAWSDB_URL = 'mysql://hkq3pgqpeorrajet:nbi3nl64q4xbhqvg@klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qhdjq7e0x35jy371'
 
 var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
