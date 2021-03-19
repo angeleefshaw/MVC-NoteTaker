@@ -63,9 +63,18 @@ app.get("/", function(req, res) {
   })
 
   app.post("/", function(req, res) {
-    connection.query('INSERT INTO topics (topic_name, topic_summary, learned) VALUES (?)', [req.body.task] , function (err, result) {
-        if (err) throw err;
+    console.log("made it to the server")
+  
+    connection.query('INSERT INTO topics (topic_name, topic_summary, learned) VALUES (?, ?, ?)',[req.body.name, req.body.summary, req.body.learned], function (err, results) {
+      if (err) throw err;
+      res.end(JSON.stringify(results));
     })
+    
+    //res.json({
+      //status: 200,
+     // message: "New user added successfully"
+    //})
+
 })
   
 //listener

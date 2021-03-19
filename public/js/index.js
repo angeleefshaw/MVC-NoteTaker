@@ -1,5 +1,7 @@
 //api calls
 
+const { on } = require("../../config/connection");
+
 //handle submission
  $(".update").on("click", function(event) {
      console.log('test')
@@ -21,8 +23,25 @@
     })
 })
 
-$(".main-page").on("submit", function(event) {
+$(".topic-form").on("submit", function(event) {
   event.preventDefault();
 
-       location.assign("/");
+  var data = {
+    name: $('#name').val().trim(),
+    summary: $('#summary').val().trim(),
+    learned: 0
+  }
+  console.log(data)
+
+
+  $.ajax("/", {
+    type: "POST",
+    data: data
+  }).then(function() {
+    console.log("the post request was successful")
+    location.replace("/");
+  })
+       
 })
+
+

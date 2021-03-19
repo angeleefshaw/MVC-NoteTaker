@@ -1,14 +1,14 @@
 
 <div className = 'header'>
   <h1>Tech-Tracker</h1>
-  <p>A way to keep track of topics I have learned or wish to learn as a fullstack developer.</p>
+  <p>Fullstack development topics</p>
 </div>
 
 <!-- Pass in data from server.js -->
 <ul>
   {{#each topics}}
   	<li>
-  	<p><span class="label">ID:</span> {{this.id}}</p>
+  	{{!-- <p><span class="label">ID:</span> {{this.id}}</p> --}}
       <p><span class="label">Topic:</span> {{this.topic_name}}</p>
       <p><span class="label">Description:</span> {{this.topic_summary}}</p>
       <p><span class="label">Learned:</span> {{this.learned}}</p>
@@ -24,14 +24,14 @@
 
   <form class="topic-form">
 
-      <div class="form-group">
+    <div class="form-group">
       <label for="auth">Topic:</label>
-      <input type="text" id="auth" name="author">
+      <input type="text" id="name" name="name">
     </div>
 
     <div class="form-group">
       <label for="quo">Description:</label>
-      <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
+      <textarea id="summary" name="summary" rows="8" cols="40"></textarea>
     </div>
 
     <button type="submit">Add Topic </button>
