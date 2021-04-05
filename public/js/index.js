@@ -1,6 +1,5 @@
 //api calls
 
-const { on } = require("../../config/connection");
 
 //handle submission
  $(".update").on("click", function(event) {
@@ -37,9 +36,9 @@ $(".topic-form").on("submit", function(event) {
   $.ajax("/", {
     type: "POST",
     data: data
-  }).then(function() {
-    console.log("the post request was successful")
-    location.replace("/");
+  }).then(function(response) {
+    console.log(response)
+    location.reload()
   })
        
 })
